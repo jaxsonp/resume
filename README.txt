@@ -1,0 +1,1 @@
+This repository contains the LaTeX source for my resume. It also contains a github action that autonomously renders my resume to a PDF, which can be found in the 'pdf-output' branch.
