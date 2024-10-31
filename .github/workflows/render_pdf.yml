@@ -1,0 +1,35 @@
+on:
+  push:
+    branches:
+      - main  # Trigger on commits to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v2
+
+      - name: Set up LaTeX environment
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
+      - name: Compile LaTeX to PDF
+        run: |
+          pdflatex -interaction=nonstopmode -output-directory=. main.tex
+
+      - name: Checkout output branch
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git fetch origin
+          git checkout -B pdf-output origin/pdf-output || git checkout -b pdf-output
+
+      - name: Move PDF and commit
+        run: |
+          mv resume.pdf path/to/pdf-output-directory/  # Specify path if needed
+          git add resume.pdf
+          git commit -m "Automated render"
+          git push origin pdf-output
