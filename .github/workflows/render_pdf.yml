@@ -31,5 +31,5 @@ jobs:
         run: |
           mv main.pdf resume.pdf
           git add resume.pdf
-          git commit -m $(echo "Automated render" $(date))
+          git commit -m "$(echo "Automated render at " $(date))"
           git push origin pdf-output
