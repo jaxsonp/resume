@@ -19,7 +19,6 @@ jobs:
       - name: Compile LaTeX to PDF
         run: |
           pdflatex -interaction=nonstopmode -output-directory=. main.tex
-	  mv main.pdf resume.pdf
 
       - name: Checkout output branch
         run: |
@@ -30,7 +29,7 @@ jobs:
 
       - name: Move PDF and commit
         run: |
-          mv resume.pdf path/to/pdf-output-directory/  # Specify path if needed
+          mv main.pdf resume.pdf
           git add resume.pdf
           git commit -m "Automated render"
           git push origin pdf-output
