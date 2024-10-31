@@ -19,6 +19,7 @@ jobs:
       - name: Compile LaTeX to PDF
         run: |
           pdflatex -interaction=nonstopmode -output-directory=. main.tex
+	  mv main.pdf resume.pdf
 
       - name: Checkout output branch
         run: |
