@@ -1,8 +1,6 @@
 %-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% Jaxson Pahukula's Resume
+% made from template: https://github.com/jakegut/resume
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -27,10 +25,15 @@
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+\usepackage[default]{raleway}
 
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
+% \usepackage{concmath}
+% \usepackage[scaled]{beraserif}
+% \usepackage[T1]{fontenc}
 
 
 \pagestyle{fancy}
@@ -54,7 +57,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+      \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -63,30 +66,30 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+    \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+        \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
+\newcommand{\resumeProjectHeading}[1]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+        \small#1 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -112,36 +115,31 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Jake Ryan} \\ \vspace{1pt}
-    \small 123-456-7890 $|$ \href{mailto:x@x.com}{\underline{jake@su.edu}} $|$ 
-    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
-    \href{https://github.com/...}{\underline{github.com/jake}}
+    \textbf{\Huge \scshape Jaxson Pahukula} \\ \vspace{1pt}
+    \small (808) 740-5007 $|$ \href{mailto:jaxpahu@gmail.com}{\underline{jaxpahu@gmail.com}} $|$ \href{https://jaxsonp.com}{\underline{jaxsonp.com}}
 \end{center}
 
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Southwestern University}{Georgetown, TX}
-      {Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
-    \resumeSubheading
-      {Blinn College}{Bryan, TX}
-      {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Purdue University}{West Lafayette, IN}
+        {Pursuing B.S. in Computer Science, systems programming concentration}{Aug. 2022 -- May 2025 (est)}
+    \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
     \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {Texas A\&M University}{College Station, TX}
-      \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+        {Griffiss Institute, VICEROY Maven Program}{Summer 2024}
+        {Research Intern}{Rome, NY}
+        \resumeItemListStart
+        \resumeItem{Participated in cybersecurity lessons with various Department of Defense (DoD) personnel on Air Force and DoD-oriented cyber missions.}
+        \resumeItem{Was selected to represent VICEROY and P3I at the Pentagon in a meeting with HON Shyu (OUSD(R\&E)) and dialogued with the offices of Hawai’i's senators and congressmen/women in Washington DC.}
+        \resumeItem{Worked on a research project with the Air Force Research Lab.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -155,49 +153,62 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Information Technology Support Specialist}{Sep. 2018 -- Present}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Communicate with managers to set up campus computers used on campus}
-        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
-    \resumeItemListEnd
+        {Applied Research Laboratory at the University of Hawai’i}{Summer 2023}
+        {Software Dev Asst. / Intern}{Kihei, HI}
+        \resumeItemListStart
+            \resumeItem{Collaborated on a team researching new technologies for portal software for the DoD’s vanguard high performance computing center.}
+            \resumeItem{Developed backend software for a mock central administration platform for managing containerized software on servers and swarms with Python, Flask, and Docker.}
+        \resumeItemListEnd
+
+     \resumeSubheading
+        {Data Science Labs, Calculus II}{Jan. 2023 -- Dec. 2023}
+        {Lab Instructor / TA}{West Lafayette, IN}
+        \resumeItemListStart
+            \resumeItem{Taught students to apply concepts from Calculus I and II to basic data science problems in a lab setting}
+            \resumeItem{Led students in engaging lab projects using Jupyter notebooks, Python, Raspberry Pis, and various prototyping electronic components.}
+            \resumeItem{Collaborated with other instructors and superiors to develop and refine the course curriculum.}
+        \resumeItemListEnd
 
     \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-      \resumeItemListEnd
+        {The Data Mine, Purdue University}{Aug. 2023 -- May 2024}
+        {Undergraduate Data Science Researcher}{West Lafayette, IN}
+        \resumeItemListStart
+            \resumeItem{Collaborated with Raytheon Technologies to create a hard drive remaining-useful-life prediction model.}
+            \resumeItem{Applied various data science procedures and techniques such as anomaly detection, k-means clustering, LSTM models, and more.}   
+        \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-            \resumeItem{Visualized GitHub data to show collaboration}
-            \resumeItem{Used Celery and Redis for asynchronous tasks}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
-          \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{University Simple C Compiler} $|$ \emph{C++, LLVM}}
+        \resumeItemListStart
+            \resumeItem{A top-down recursive descent compiler written for Purdue's CS 35200, a compilers class.}
+            \resumeItem{Compiles University Simple C, an LL(1) toy subset of C, to LLVM IR with various custom optimization passes.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{FactoryScript} $|$ \emph{Rust}}
+        \resumeItemListStart
+            \resumeItem{An interpreted, dynamically-typed, gag programming language  (esolang) themed around factories.}
+            \resumeItem{Programs (\textit{factories}) are graphs with nodes (\textit{stations}) connected by Unicode box characters (\textit{conveyor belts}).}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Docker Dash} (Backend) $|$ \emph{Python, Flask, Docker}}
+        \resumeItemListStart
+            \resumeItem{A mock central administration web app for managing containerized software}
+            \resumeItem{Created a complete REST API for interacting with docker instances, with complete documentation.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Beat Ballot} $|$ \emph{React, MUI, SQLite, Flask}}
+        \resumeItemListStart
+            \resumeItem{A web app where users create collaborative Spotify playlists with friends, voting on songs to add or remove.}
+            \resumeItem{Created for a hackathon (Boilermake XI) in 36 hours.}
+        \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
 
 
 
@@ -206,10 +217,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     \textbf{Languages}{: Python, C, Rust, C++, Java, Javascript, HTML/CSS, SQL, R} \\
+     \textbf{Dev Environments/Tools}{: Git, Docker, UNIX, Jupyter, Visual Studio, IntelliJ } \\
+     \textbf{Libraries}{: React, Flask, NumPy, Matplotlib, Pandas}
     }}
  \end{itemize}
 
