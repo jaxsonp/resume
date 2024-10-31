@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main  # Trigger on commits to the main branch
+      - main # Trigger on commits to the main branch
 
 jobs:
   build:
@@ -31,5 +31,5 @@ jobs:
         run: |
           mv main.pdf resume.pdf
           git add resume.pdf
-          git commit -m "Automated render"
+          git commit -m $(echo "Automated render" $(date))
           git push origin pdf-output
