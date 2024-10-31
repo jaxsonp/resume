@@ -1,0 +1,1 @@
+This branch contains the output of the automated PDF renderer action, in resume.pdf.
